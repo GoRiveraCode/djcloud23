@@ -8,6 +8,7 @@ namespace Grades
 {
     class GradeBook
     {
+        // My constructor to set the grades to be a new list
         public GradeBook()
         {
             grades = new List<float>();
@@ -30,10 +31,14 @@ namespace Grades
             return stats;
         }
 
+        // Takes the values passed into it by grade and adds them to the grades list
+
         public void AddGrade(float grade)
         {
             grades.Add(grade);
         }
+
+        // Saves the list
 
         List<float> grades;
     }
